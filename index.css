@@ -1,6 +1,25 @@
-@font-face {
-    font-family: Jua;
-    src: url(res/fonts/Jua-Regular.ttf);
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #111;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #111;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color: #111;
 }
 
 body {
@@ -8,8 +27,101 @@ body {
     color: #c28e0e;
 
     text-align: center;
-    font-family: Jua;
-    font-size: 60px;
+}
 
-    padding-top: 15%;
+#header {
+    grid-area: header;
+}
+
+#roster {
+    grid-area: roster;
+
+    display: grid;
+    grid-gap: 15px;
+    margin-bottom: 5%;
+}
+
+.member {
+    border-radius: 18px;
+    font-size: 150%;
+
+    position: relative;
+    text-align: center;
+}
+
+.member > img {
+    opacity: 1;
+    border-radius: 15px;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.member > .title {
+    opacity: 0;
+    
+    font-family: Roboto;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c28e0e;
+}
+
+.member:hover > img {
+    opacity: 0.1;
+}
+
+.member:hover > .title {
+    opacity: 1;
+}
+
+.sl {
+    border: 3px solid #c28e0e;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    #header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "roster";
+
+        font-size: 40px;
+    }
+
+    #roster {
+        grid-template-columns: minmax(100px, 1fr);
+        grid-auto-rows: 250px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+    #header {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "... header ..."
+            "roster roster roster";
+
+        font-size: 60px;
+    }
+
+    #roster {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        grid-auto-rows: 250px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
 }
