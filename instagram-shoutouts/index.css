@@ -1,0 +1,114 @@
+a {
+    /* text-decoration: none;
+    color: #c28e0e; */
+
+    background-color: #c28e0e;
+    box-shadow: 0 5px 0 #876309;
+    color: #333;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+
+    background-color: #a0760b;
+    cursor: pointer;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+
+    box-shadow: none;
+    top: 5px;
+}
+
+body {
+    background-color: #333;
+    color: #c28e0e;
+
+    text-align: center;
+}
+
+#header {
+    grid-area: header;
+}
+
+#instagramShoutouts {
+    grid-area: instagram;
+
+    margin-bottom: 5%;
+}
+
+#instagramShoutouts div h3 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+#instagramShoutouts div a {
+    font-weight: bold;
+}
+
+.todo {
+    display: grid;
+
+    margin-top: 2%;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    #header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "instagram";
+
+        font-size: 40px;
+    }
+
+    .todo {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 4%;
+        margin-right: 4%;
+
+        font-size: 25px;
+    }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+    #header {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "... header ..."
+            "instagram instagram instagram";
+
+        font-size: 60px;
+    }
+
+    .todo {
+        grid-template-columns: repeat(8, minmax(100px, 1fr));
+        margin-left: 7%;
+        margin-right: 7%;
+
+        font-size: 25px;
+    }
+}
