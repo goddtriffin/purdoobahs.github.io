@@ -49,7 +49,7 @@ body {
     text-align: center;
 }
 
-.member > img {
+.member > a > img {
     opacity: 1;
     border-radius: 15px;
 
@@ -64,7 +64,7 @@ body {
     transition: opacity 0.2s;
 }
 
-.member > .title {
+.member > a > .title {
     opacity: 0;
     
     font-family: Roboto;
@@ -76,11 +76,11 @@ body {
     color: #c28e0e;
 }
 
-.member:hover > img {
+.member:hover > a > img {
     opacity: 0.1;
 }
 
-.member:hover > .title {
+.member:hover > a > .title {
     opacity: 1;
 }
 
