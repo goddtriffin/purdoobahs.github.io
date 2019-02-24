@@ -50,8 +50,6 @@ body {
 
 #instagramShoutouts {
     grid-area: instagram;
-
-    margin-bottom: 5%;
 }
 
 #instagramShoutouts div h3 {
@@ -65,8 +63,6 @@ body {
 
 .todo {
     display: grid;
-
-    margin-top: 2%;
 }
 
 .done {
@@ -84,12 +80,17 @@ body {
         font-size: 40px;
     }
 
-    .todo {
-        grid-template-columns: minmax(100px, 1fr);
-        margin-left: 4%;
-        margin-right: 4%;
+    #instagramShoutouts {
+        margin-bottom: 7%;
+    }
 
-        font-size: 25px;
+    .todo {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        margin-left: 2%;
+        margin-right: 2%;
+
+        font-size: 20px;
+        margin-top: 6%;
     }
 }
 
@@ -104,11 +105,16 @@ body {
         font-size: 60px;
     }
 
+    #instagramShoutouts {
+        margin-bottom: 5%;
+    }
+
     .todo {
         grid-template-columns: repeat(8, minmax(100px, 1fr));
         margin-left: 7%;
         margin-right: 7%;
 
         font-size: 25px;
+        margin-top: 2%;
     }
 }
