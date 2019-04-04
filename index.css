@@ -35,12 +35,12 @@ body {
     text-align: center;
 }
 
-#letters > a {
-    color: #c28e0e;
-}
-
 #header {
     grid-area: header;
+}
+
+#letters > a {
+    color: #c28e0e;
 }
 
 #roster {
@@ -99,7 +99,7 @@ body {
 }
 
 /* mobile */
-@media (max-width: 900px) {
+@media (max-width: 750px) {
     #header {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -107,6 +107,13 @@ body {
             "roster";
 
         font-size: 40px;
+    }
+
+    #logo {
+        width: 200px;
+        height: 200px;
+        clip-path: circle(75px at center);
+        margin-bottom: -75px;
     }
 
     #roster {
@@ -118,7 +125,7 @@ body {
 }
 
 /* desktop */
-@media (min-width: 900px) {
+@media (min-width: 750px) {
     #header {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -126,6 +133,13 @@ body {
             "roster roster roster";
 
         font-size: 60px;
+    }
+
+    #logo {
+        width: 300px;
+        height: 300px;
+        clip-path: circle(120px at center);
+        margin-bottom: -115px;
     }
 
     #roster {
