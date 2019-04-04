@@ -1,31 +1,26 @@
 a {
     text-decoration: none;
-    color: #111;
+    color: #c28e0e;
 }
 
 a:visited {
     text-decoration: none;
-    color: #111;
 }
 
 a:hover {
     text-decoration: none;
-    color: #111;
 }
 
 a:focus {
     text-decoration: none;
-    color: #111;
 }
 
 a:hover {
     text-decoration: none;
-    color: #111;
 }
 
 a:active {
     text-decoration: none;
-    color: #111;
 }
 
 body {
@@ -41,14 +36,6 @@ body {
 
 #header {
     grid-area: header;
-}
-
-#letters > a {
-    color: #c28e0e;
-}
-
-#social > a {
-    color: #c28e0e;
 }
 
 #roster {
@@ -91,7 +78,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #c28e0e;
 }
 
 .member:hover > a > img {

@@ -1,37 +1,32 @@
 a {
     text-decoration: none;
-    color: #111;
+    color: #c28e0e;
 }
 
 a:visited {
     text-decoration: none;
-    color: #111;
 }
 
 a:hover {
     text-decoration: none;
-    color: #111;
 }
 
 a:focus {
     text-decoration: none;
-    color: #111;
 }
 
 a:hover {
     text-decoration: none;
-    color: #111;
 }
 
 a:active {
     text-decoration: none;
-    color: #111;
 }
 
 .button {
     background-color: #c28e0e;
     box-shadow: 0 5px 0 #876309;
-    color: #333;
+    color: #000;
     padding: 1em 1.5em;
     position: relative;
     text-decoration: none;
@@ -77,14 +72,6 @@ body {
 
 #header {
     grid-area: header;
-}
-
-#letters > a {
-    color: #c28e0e;
-}
-
-#social > a {
-    color: #c28e0e;
 }
 
 #instagramShoutouts {
