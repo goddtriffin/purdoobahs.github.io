@@ -65,6 +65,10 @@ a:active {
 }
 
 body {
+    grid-template-areas:
+        "header"
+        "instagram";
+
     background-color: #333;
     color: #c28e0e;
 
@@ -76,6 +80,10 @@ body {
 }
 
 #letters > a {
+    color: #c28e0e;
+}
+
+#social > a {
     color: #c28e0e;
 }
 
@@ -102,20 +110,21 @@ body {
 
 /* mobile */
 @media (max-width: 750px) {
-    #header {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "instagram";
-
-        font-size: 40px;
-    }
-
     #logo {
         width: 200px;
         height: 200px;
         clip-path: circle(75px at center);
-        margin-bottom: -75px;
+        margin-bottom: -80px;
+    }
+
+    #letters {
+        font-size: 90px;
+    }
+
+    #social {
+        font-size: 40px;
+        margin-top: -70px;
+        margin-bottom: 20px;
     }
 
     #instagramShoutouts {
@@ -134,20 +143,21 @@ body {
 
 /* desktop */
 @media (min-width: 750px) {
-    #header {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "... header ..."
-            "instagram instagram instagram";
-
-        font-size: 60px;
-    }
-
     #logo {
         width: 300px;
         height: 300px;
         clip-path: circle(120px at center);
-        margin-bottom: -115px;
+        margin-bottom: -120px;
+    }
+
+    #letters {
+        font-size: 150px;
+    }
+
+    #social {
+        font-size: 50px;
+        margin-top: -100px;
+        margin-bottom: 40px;
     }
 
     #instagramShoutouts {
@@ -155,7 +165,7 @@ body {
     }
 
     .todo {
-        grid-template-columns: repeat(8, minmax(100px, 1fr));
+        grid-template-columns: repeat(6, minmax(100px, 1fr));
         margin-left: 7%;
         margin-right: 7%;
 
