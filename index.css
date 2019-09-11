@@ -31,6 +31,7 @@ a:active {
 body {
     grid-template-areas:
         "header"
+        "legend"
         "roster";
 
     background-color: #333;
@@ -48,6 +49,40 @@ body {
     letter-spacing: 0.05em;
 }
 
+.legend {
+    text-align: center;
+    grid-area: legend;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.legend .legend-scale ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.legend .legend-scale ul li {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 6px;
+    text-align: left;
+    list-style: none;
+}
+.legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.legend a {
+    color: #777;
+}
+
 #roster {
     grid-area: roster;
 
@@ -63,7 +98,6 @@ body {
     position: relative;
     text-align: center;
 }
-
 .member > a > img {
     opacity: 1;
     border-radius: 15px;
@@ -78,7 +112,6 @@ body {
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
-
 .member > a > .title {
     opacity: 0;
     
@@ -89,17 +122,35 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .member:hover > a > img {
     opacity: 0.1;
 }
-
 .member:hover > a > .title {
     opacity: 1;
+}
+.emoji {
+    clear: both;
+    display: inline-block;
+    width: 100%;
 }
 
 .sl {
     border: 3px solid #c28e0e;
+}
+.oldfuck {
+    border: 3px solid #ba55d3;
+}
+.senior {
+    border: 3px solid #ed3742;
+}
+.junior {
+    border: 3px solid #62bb47;
+}
+.sophomore {
+    border: 3px solid #3bcaef;
+}
+.freshman {
+    border: 3px solid #f9beff;
 }
 
 /* mobile */
