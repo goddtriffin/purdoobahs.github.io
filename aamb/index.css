@@ -1,0 +1,21 @@
+/* mobile */
+@media (max-width: 700px) {
+  #aamb {
+    margin: 20% 0;
+  }
+
+  #aamb > p {
+    margin: 15% 0;
+  }
+}
+
+/* desktop */
+@media (min-width: 700px) {
+  #aamb {
+    margin: 5% 0;
+  }
+
+  #aamb > p {
+    margin: 7% 0;
+  }
+}
