@@ -2,12 +2,21 @@
     grid-area: instagram;
 }
 
-#instagramShoutouts div h3 {
-    font-size: 35px;
-    text-decoration: underline;
+#instagramShoutouts > div {
+    margin: 5% 0;
 }
 
-#instagramShoutouts div a {
+#instagramShoutouts > div > h3 {
+    font-size: 45px;
+    text-decoration: underline;
+    margin-bottom: -1%;
+}
+
+#instagramShoutouts > div > p {
+    font-style: italic;
+}
+
+#instagramShoutouts > div > a {
     font-weight: bold;
 }
 
@@ -19,8 +28,20 @@
     text-decoration: line-through;
 }
 
+#posted > .todo {
+    text-decoration: underline;
+}
+
 /* mobile */
 @media (max-width: 700px) {
+    #instagramShoutouts > div > p {
+        margin-bottom: 10%;
+    }
+
+    #posted > .todo {
+        margin-top: -10%;
+    }
+
     .todo {
         grid-template-columns: repeat(3, minmax(100px, 1fr));
         margin-left: 2%;
@@ -33,6 +54,14 @@
 
 /* desktop */
 @media (min-width: 700px) {
+    #instagramShoutouts > div > p {
+        margin-bottom: 3%;
+    }
+
+    #posted > .todo {
+        margin-top: -4%;
+    }
+
     .todo {
         grid-template-columns: repeat(6, minmax(100px, 1fr));
         margin-left: 7%;
