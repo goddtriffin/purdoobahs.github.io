@@ -63,9 +63,9 @@ a:active {
 
 body {
   grid-template-areas:
-      "header"
-      "legend"
-      "roster";
+    "header"
+    "legend"
+    "roster";
 
   background-color: #333;
   color: #c28e0e;
@@ -83,21 +83,23 @@ body {
 /* mobile */
 @media (max-width: 700px) {
   #logo {
-      width: 200px;
-      height: 200px;
-      clip-path: circle(75px at center);
-      margin-top: -20px;
-      margin-bottom: -110px;
+    width: 200px;
+    height: 200px;
+    clip-path: circle(75px at center);
+    margin-top: -20px;
+    margin-bottom: -110px;
   }
-
   #letters {
-      font-size: 90px;
+    font-size: 90px;
   }
-
   #social {
-      font-size: 40px;
-      margin-top: -70px;
-      margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: -70px;
+    margin-bottom: 20px;
+  }
+  #nav {
+    font-size: 12px;
+    margin: 5% 0 11% 0;
   }
 
   footer {
@@ -109,21 +111,22 @@ body {
 /* desktop */
 @media (min-width: 700px) {
   #logo {
-      width: 300px;
-      height: 300px;
-      clip-path: circle(120px at center);
-      margin-top: -20px;
-      margin-bottom: -170px;
+    width: 300px;
+    height: 300px;
+    clip-path: circle(120px at center);
+    margin-top: -20px;
+    margin-bottom: -170px;
   }
-
   #letters {
-      font-size: 150px;
+    font-size: 150px;
   }
-
   #social {
-      font-size: 50px;
-      margin-top: -120px;
-      margin-bottom: 20px;
+    font-size: 50px;
+    margin-top: -120px;
+    margin-bottom: 20px;
+  }
+  #nav {
+    margin: 2% 0 4% 0;
   }
 
   footer {
