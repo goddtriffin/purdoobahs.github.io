@@ -79,6 +79,10 @@ body {
 #letters {
   letter-spacing: 0.05em;
 }
+#nav > p {
+  display: inline;
+  margin: 0 5px;
+}
 
 /* mobile */
 @media (max-width: 700px) {

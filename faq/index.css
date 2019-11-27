@@ -1,0 +1,31 @@
+#faq > div > h2 {
+  text-decoration: underline;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  #faq {
+    margin: 20% 0;
+  }
+  #faq > div {
+    width: 90%;
+    margin: 10% auto;
+  }
+  #faq > div > p {
+    margin-top: -3%;
+  }
+}
+
+/* desktop */
+@media (min-width: 700px) {
+  #faq {
+    margin: 5% 0;
+  }
+  #faq > div {
+    width: 65%;
+    margin: 2% auto;
+  }
+  #faq > div > p {
+    margin-top: -10px;
+  }
+}
