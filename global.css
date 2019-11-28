@@ -57,6 +57,10 @@ a:active {
   top: 5px;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 * {
   font-family: NotoSerifKR;
 }
@@ -79,10 +83,6 @@ body {
 #letters {
   letter-spacing: 0.05em;
 }
-#nav > p {
-  display: inline;
-  margin: 0 5px;
-}
 
 /* mobile */
 @media (max-width: 700px) {
@@ -103,7 +103,11 @@ body {
   }
   #nav {
     font-size: 12px;
-    margin: 5% 0 11% 0;
+    margin: -5% 0 11% 0;
+  }
+  #nav > p {
+    display: block;
+    margin: 12% 0;
   }
 
   footer {
@@ -131,6 +135,10 @@ body {
   }
   #nav {
     margin: 2% 0 4% 0;
+  }
+  #nav > p {
+    display: inline;
+    margin: 0 5px;
   }
 
   footer {
