@@ -1,3 +1,3 @@
 # purdoobahs.github.io
 
-The Purdoobahs website.
+The official website of the Purdoobahs.
