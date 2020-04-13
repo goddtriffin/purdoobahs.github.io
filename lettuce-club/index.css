@@ -1,0 +1,46 @@
+#lettuce > div > h2 {
+  text-decoration: underline;
+}
+
+/* #lettuce > * > * {
+  border: 1px solid black;
+} */
+
+#lettuce > div > ol {
+  display: inline-block;
+}
+
+#lettuce > div > ol > li {
+  text-align: left;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  #lettuce {
+    margin: 20% 0;
+  }
+  #lettuce > div {
+    width: 90%;
+    margin: 10% auto;
+  }
+  #lettuce > div > p {
+    margin-top: -3%;
+  }
+  #lettuce > div > ol {
+    margin-top: -3%;
+  }
+}
+
+/* desktop */
+@media (min-width: 700px) {
+  #lettuce > div {
+    width: 65%;
+    margin: 2% auto;
+  }
+  #lettuce > div > p {
+    margin-top: -10px;
+  }
+  #lettuce > div > ol {
+    margin-top: -10px;
+  }
+}
